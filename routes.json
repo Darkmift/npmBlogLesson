@@ -1,0 +1,5 @@
+{
+    "/gmail/*": "/",
+    "/gmail/:id/show": "/:resource/:id",
+    "/gmail/:*": "/posts?*=:*"
+}
