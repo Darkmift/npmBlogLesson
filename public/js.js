@@ -14,9 +14,11 @@ function boop() {
                 $('<tr>').append(
                     $('<td>').text(element.from),
                     $('<td>').text(element.subject),
-                    $('<td>').text(element.body).css({
-                        "overflow": "scroll"
-                    }),
+                    $('<td>').append($('<div>').css({
+                        "overflow": "scroll",
+                        "width": "100%",
+                        "height": "10vh"
+                    }).text(element.body)),
                     $('<td>').text(element.date),
                 ),
             );

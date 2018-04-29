@@ -1,5 +1,9 @@
 /****/
 
+::-webkit-scrollbar {
+    display: none!important;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 html,
 body {
@@ -28,6 +32,7 @@ body {
 
 .main_div {
     display: flex;
+    width: 70vw;
     flex-wrap: wrap;
     margin-left: 2rem;
     margin-top: 1rem;
@@ -102,4 +107,9 @@ body {
     visibility: hidden;
     align-items: center;
     justify-content: center;
+}
+
+td,
+th {
+    width: 5vw;
 }
